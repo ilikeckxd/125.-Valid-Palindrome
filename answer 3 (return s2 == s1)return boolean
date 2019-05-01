@@ -1,0 +1,18 @@
+class Solution(object):
+    def isPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: bool
+        """
+        s1 = []
+        s = s.lower()
+        for letter in s:
+            if letter in "abcdefghijklmnopqrstuvwxyz0123456789":
+                s1.append(letter)   
+        s2 = s1[:]
+        s1.reverse()
+        return s2 == s1
+        
+        
+       #Runtime: 84 ms, faster than 18.36% of Python online submissions for Valid Palindrome.
+#Memory Usage: 13.8 MB, less than 10.22% of Python online submissions for Valid Palindrome.
